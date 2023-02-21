@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <!-- Adicionando o CSS do Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+<!-- Adicionando o CSS do Bootstrap -->
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+  rel="stylesheet"
+/>
   <style>
     body {
       background-color: white;
@@ -69,6 +77,10 @@
     transition-duration: 20s;
   }
 
+  .larger-nav {
+  width: 100%;
+}
+
     #night-mode-btn {
       position: fixed;
       left: 18px;
@@ -98,103 +110,127 @@
 
 <body style="background-color: white;">
   <div class="container my-5">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 text-right">
-        <svg>
-		<circle cx="200" cy="70" r="70" fill="#5B86AE" />
-    <circle cx="250" cy="110" r="20" fill="#ec8e58" />
-	</svg>
-        <h1><b>Ângelo Parrella</b></h1>
-        <p class="white">Sou jornalista e redator com foco em produção e distribuição de conteúdo digital com experiência em análise de resultados e desenvolvimento de projetos em comunicação. Tenho prática em produzir reportagens em hipertexto, audiovisual e podcast.</p>
-        <h2 class="white"><b>Contato</b></h2>
-        <p class="white">
-          <a class="white" href="mailto:angelo.parrella@live.com" target="_blank">angelo.parrella@live.com</a>
-          <br>
-          <a class="white" href="https://wa.me/+5528992781495" target="_blank">+55 28 992781495</a>
-          <br>
-          <a class="white" href="https://www.linkedin.com/in/angeloparrella/" target="_blank">linkedin</a>
-          <br>
-          <br>
-          <a class="white" href="https://pt.wikipedia.org/wiki/Vit%C3%B3ria_(Esp%C3%ADrito_Santo)" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
-  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
-</svg></i></a>
-Vitória, Espírito Santo
-          <br>
-          Brasil
-          </p>
-        <svg>
-  <line x1="0" y1="50" x2="2000" y2="50" stroke="#ec8e58" stroke-width="4" />
-  <line x1="0" y1="50" x2="135" y2="50" stroke="#5B86AE" stroke-width="4" />
-</svg>
-      </div>
+  <div class="row gx-10 justify-content-center">
 
-      <div class="col-sm-12 col-md-6 text-left">
-          <p class="white"><font size="5"><i class="bi bi-hash"></i> <b>EXPERIÊNCIAS </b></font></p>
+    <div class="col-md-3 text-end">
+      <svg>
+		   <circle cx="230" cy="70" r="70" fill="#5B86AE" />
+       <circle cx="275" cy="110" r="20" fill="#ec8e58" />
+	     </svg>
+     <h1><b>Ângelo Parrella</b></h1>
+      <p class="white">Sou jornalista e redator com foco em produção e distribuição de conteúdo digital com experiência em análise de resultados e desenvolvimento de projetos em comunicação. Tenho prática em produzir reportagens em hipertexto, audiovisual e podcast.</p>
+      <h2 class="white"><b>Contato</b></h2>
+      <p class="white">
+      <a class="white" href="mailto:angelo.parrella@live.com" target="_blank">angelo.parrella@live.com</a>
+      <br>
+      <a class="white" href="https://wa.me/+5528992781495" target="_blank">+55 28 992781495</a>
+      <br>
+      <a class="white" href="https://www.linkedin.com/in/angeloparrella/" target="_blank">linkedin</a>
+      <br>
+      <br>
+      <a class="white" href="https://pt.wikipedia.org/wiki/Vit%C3%B3ria_(Esp%C3%ADrito_Santo)" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+      </svg>
+      </i>
+      </a>
+      Vitória, Espírito Santo
+      <br>
+      Brasil
+      </p>
+      <svg>
+     <line x1="0" y1="50" x2="2000" y2="50" stroke="#ec8e58" stroke-width="4" />
+     <line x1="0" y1="50" x2="135" y2="50" stroke="#5B86AE" stroke-width="4" />
+     </svg>
+   </div>
 
-<!-- Texto assessoria de imprensa -->
-          <button class="btn btn-light border-info slow-fade" data-toggle="collapse" data-target="#texto" aria-expanded="false" aria-controls="texto">
-            <img src="file:///C:/Users/angel/Downloads/Telegram%20Desktop/assessoria-azul.svg" width="100%"">
-          </button>
+    <div class="col-md-6 offset-md-1 text-start">
+      
+        <!-- Tabs navs -->
+<ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="ex1-tab-1"
+      data-mdb-toggle="tab"
+      href="#ex1-tabs-1"
+      role="tab"
+      aria-controls="ex1-tabs-1"
+      aria-selected="true"
+      >Portifólio</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="ex1-tab-2"
+      data-mdb-toggle="tab"
+      href="#ex1-tabs-2"
+      role="tab"
+      aria-controls="ex1-tabs-2"
+      aria-selected="false"
+      >Experiência</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="ex1-tab-3"
+      data-mdb-toggle="tab"
+      href="#ex1-tabs-3"
+      role="tab"
+      aria-controls="ex1-tabs-3"
+      aria-selected="false"
+      >Ensino</a
+    >
+  </li>
+</ul>
+<!-- Tabs navs -->
 
-            <div class="collapse" id="texto">
-              <br>
-              <p class="white">Planejamento, apuração e produção de pautas, releases, notas. Clipping diário, sugestão de pautas e atendimento às demandas de imprensa.
-                Acompanhamento em entrevistas e suporte de media training para os clientes, além de produção mensal de relatório de resultados. Outras atividades:
-                Redator publicitário; Apoio ao setor de social media.
-                <br>
-                <br>
-              <b>Clientes:</b> FortLev; Farmácia Mônica; Construtora iUrban, Construtora Macafé; Cooltiva Fazenda Urbana; Obrazul; Cpaps; Politintas; MedSênior.</p>
-            </div>
+<!-- Tabs content -->
+<div class="tab-content" id="ex1-content">
+  <div
+    class="tab-pane fade show active"
+    id="ex1-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex1-tab-1"
+  >
+  <div class="col-6 col-sm-30"><img src="https://madeirasalba.com.br/wp-content/uploads/2020/01/2325-e1578681696845.jpg" height="20%" width="50%"></div>
+  <div class="col-6 col-sm-30"><img src="https://madeirasalba.com.br/wp-content/uploads/2020/01/2325-e1578681696845.jpg" height="20%" width="50%"></div>
 
-<!-- Texto Social Media -->
-          <br>
-          <br>
-            <button class="btn btn-light border-info slow-fade" data-toggle="collapse" data-target="#texto2" aria-expanded="false" aria-controls="texto">
-            <img src="file:///C:/Users/angel/Downloads/Telegram%20Desktop/assessoria-azul.svg" width="100%"">
-          </button>
+  <!-- Force next columns to break to new line -->
+  <div class="w-100"></div><br>
 
-            <div class="collapse" id="texto2">
-              <br>
-              <p class="white">Planejamento, apuração e produção de pautas, releases, notas. Clipping diário, sugestão de pautas e atendimento às demandas de imprensa.
-                Acompanhamento em entrevistas e suporte de media training para os clientes, além de produção mensal de relatório de resultados. Outras atividades:
-                Redator publicitário; Apoio ao setor de social media.
-                <br>
-                <br>
-              <b>Clientes:</b> FortLev; Farmácia Mônica; Construtora iUrban, Construtora Macafé; Cooltiva Fazenda Urbana; Obrazul; Cpaps; Politintas; MedSênior.</p>
-            </div>
+  <div class="col-6 col-sm-30"><img src="https://madeirasalba.com.br/wp-content/uploads/2020/01/2325-e1578681696845.jpg" height="100%" width="100%"></div>
+  <div class="col-6 col-sm-30"><img src="https://madeirasalba.com.br/wp-content/uploads/2020/01/2325-e1578681696845.jpg" height="100%" width="100%"></div>
+  <div class="w-100"></div><br>
+  <div class="col-6 col-sm-30"><img src="https://madeirasalba.com.br/wp-content/uploads/2020/01/2325-e1578681696845.jpg" height="100%" width="100%"></div>
 
-<!-- Texto MPC -->
-            <br>
-            <br>
-          <button class="btn btn-light border-info slow-fade" data-toggle="collapse" data-target="#texto3" aria-expanded="false" aria-controls="texto">
-            <img src="file:///C:/Users/angel/Downloads/Telegram%20Desktop/assessoria-azul.svg" width="100%"">
-          </button>
-
-            <div class="collapse" id="texto3">
-              <br>
-              <p class="white">Planejamento, apuração e produção de pautas, releases, notas. Clipping diário, sugestão de pautas e atendimento às demandas de imprensa.
-                Acompanhamento em entrevistas e suporte de media training para os clientes, além de produção mensal de relatório de resultados. Outras atividades:
-                Redator publicitário; Apoio ao setor de social media.
-                <br>
-                <br>
-              <b>Clientes:</b> FortLev; Farmácia Mônica; Construtora iUrban, Construtora Macafé; Cooltiva Fazenda Urbana; Obrazul; Cpaps; Politintas; MedSênior.</p>
-            </div>
-            
+  <div class="col-6 col-sm-30"><img src="https://madeirasalba.com.br/wp-content/uploads/2020/01/2325-e1578681696845.jpg" height="100%" width="100%"></div>
+    </div>
   </div>
- </div>
+  <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+    Tab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 contentTab 2 content
+  </div>
+  <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+    Tab 3 content
+  </div>
+</div>
+<!-- Tabs content -->
+
+  </div>
+</div>
 
   <button id="night-mode-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333" class="bi bi-circle-half" viewBox="0 0 16 16">
   <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
 </svg></button>
 
+
   <!-- Adicionando o JavaScript do Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha512-Ua/7Woz9L5O0cwB/aYexmgoaD7lw3dWe9FvXejVdgqu71gRog3oJgjSWQR55fwWx+WKuk8cl7UwA1RS6QCadFA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
 
   <!-- Adicionando o jQuery e o Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
