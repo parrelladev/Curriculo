@@ -6,7 +6,7 @@ Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about St
 
 # Files
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+sdasdsada
 
 ## Create files and foldersenter code here
 
@@ -94,16 +94,7 @@ StackEdit extends the standard Markdown syntax by adding extra **Markdown extens
 
 
 ## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
+ sads
 ## KaTeX
 
 You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
