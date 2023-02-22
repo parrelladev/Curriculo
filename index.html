@@ -85,6 +85,13 @@
       z-index: 0;
     }
 
+    .avatar {
+      position: absolute;
+      top: 53px;
+      left: 695px;
+      z-index: 1;
+    }
+
     .slow-fade {
       transition-duration: 20s;
     }
@@ -122,12 +129,19 @@
 <body style="background-color: white;">
   <div class="container-fluid my-5">
     <div class="row gx-10 justify-content-center">
-
       <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-end">
+        
         <svg>
+          <defs>
+            <clipPath id="avatar-clip">
+              <circle cx="230" cy="70" r="68" />
+            </clipPath>
+          </defs>
           <circle cx="230" cy="70" r="70" fill="#5B86AE" />
-          <circle cx="275" cy="110" r="20" fill="#ec8e58" />
+          <image href="./assets/avatar.jpg" x="160" y="0" width="140" height="140" clip-path="url(#avatar-clip)" />
+          <circle cx="275" cy="120" r="20" fill="#ec8e58" />
         </svg>
+
         <h1><b>Ângelo Parrella</b></h1>
         <p class="white">Sou jornalista e redator com foco em produção e distribuição de conteúdo digital com
           experiência em análise de resultados e desenvolvimento de projetos em comunicação. Tenho prática em produzir
