@@ -9,3 +9,5 @@ Durante o processo de criação deste simples projeto, fui aprendendo que o mais
 Neste projeto aprendi um pouco sobre HTML, CSS, JavaScript e até mesmo como usar Bootstrap. Esse conhecimento foi me passando enquanto eu fazia perguntas básicas a IA que, ao invés de só me responder com um código, me explicava a lógica por trás da programação.
 
 **Aqui você poder dar um olhada no resultado:** https://parrella2.github.io/ChatGPTCurriculo/
+
+**Bootstrap que utilizei:** https://mdbootstrap.com/
