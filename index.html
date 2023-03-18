@@ -179,7 +179,7 @@
 
       <div class="col-1" style="width: 4%">
       </div>
-      
+
       <div class="col-6 col-md-11 col-lg-4 text-start">
 
         <!-- Tabs navs -->
@@ -223,9 +223,7 @@
               <div class="col-md-3 col-sm-3 col-lg-3 myclass">
                 <a href="https://www.folhavitoria.com.br/entretenimento/noticia/12/2017/com-estilo-diferente--grupo-capixaba-solveris-ganha-espaco-na-cena-do-rap-nacional"
                   target="_blank">
-                  <div class="col-6 col-sm-30"><img
-                      src="./assets/Reportagem.png"
-                      height="200px" width="200px"></div>
+                  <div class="col-6 col-sm-30"><img src="./assets/Reportagem.png" height="200px" width="200px"></div>
                   <p class="legenda">Entrevista com grupo capixaba Solveris</p>
                 </a>
               </div>
@@ -287,7 +285,7 @@
               <div class="bg-transparent"><img
                   src="https://media.licdn.com/dms/image/C4E0BAQFxS3NWj1rBeQ/company-logo_200_200/0/1621211447864?e=1684972800&v=beta&t=Ejxk54eFTYDNdNvQYeHLDrZb7ucKxNmbB7gl6rPdJG0"
                   alt="Logo da Resultate"></div>
-              <div class="bg-transparent">
+                  <div class="bg-transparent legenda">
                 <p style="font-size: 15px"><b>Assessor de Imprensa</b></p>
                 <p style="font-size: 13px">Planejamento, apuração e produção de pautas e atendimento às demandas de
                   imprensa. Acompanhamento em entrevistas e suporte de media
@@ -304,7 +302,7 @@
 
             <div class="hstack gap-3"> <!-- BOX 2 -->
               <div class="bg-transparent"><img src="./assets/logo_RF.png" alt="Logo da RF"></div>
-              <div class="bg-transparent">
+              <div class="bg-transparent legenda">
                 <p style="font-size: 15px"><b>Analista de mídias sociais</b></p>
                 <p style="font-size: 13px">Gestão e produção de conteúdo textual e visual para diversos perfis médios no
                   Instagram e no Facebook.</p>
@@ -321,7 +319,7 @@
 
             <div class="hstack gap-3"> <!-- BOX 2 -->
               <div class="bg-transparent"><img src="./assets/logo_mpc.jpg" alt="Logo do MPC"></div>
-              <div class="bg-transparent">
+              <div class="bg-transparent legenda">
                 <p style="font-size: 15px"><b>Assessor de imprensa</b></p>
                 <p style="font-size: 13px">Desempenhei as funções de escrever releases para imprensa e notícias para o
                   site institucional, arquivamento de clipping de notícias, organização de eventos e processos
@@ -336,14 +334,14 @@
               <div class="bg-transparent"><img
                   src="https://media.licdn.com/dms/image/C4D0BAQE5D9n6pdHNYQ/company-logo_200_200/0/1649339308014?e=1684972800&v=beta&t=CN_QYB9JX4F3_EGsDLYUJ5HrndjM8ZtApIdrjTn53uk"
                   alt="Logo da Resultate"></div>
-              <div class="bg-transparent">
+              <div class="bg-transparent legenda">
                 <p style="font-size: 15px"><b>Jornalista</b></p>
                 <p style="font-size: 13px">No jornal online Folha Vitória, atuei produzindo notícias do cotidiano e
                   reportagens especiais. Também foi de minha responsabilidade o desenvolvimento de conteúdos para as
                   redes sociais do portal.No jornal online Folha Vitória, atuei produzindo notícias do cotidiano e
                   reportagens especiais. Também foi de minha responsabilidade o desenvolvimento de conteúdos para as
                   redes sociais do portal.</p>
-                <p style="font-size: 13px"><b>Competências</b> Redação de notícias · Reportagem · Mídias sociais ·
+                <p style="font-size: 13px"><b>Competências:</b> Redação de notícias · Reportagem · Mídias sociais ·
                   Portais · Jornalismo</p>
               </div>
             </div>
@@ -433,6 +431,12 @@
               elements[i].classList.remove('black');
             }
           }
+
+          const captions = document.querySelectorAll(".bg-transparent, .legenda");
+          for (let i = 0; i < captions.length; i++) {
+            captions[i].style.color = body.style.backgroundColor === "white" ? "#4f4f4f" : "white";
+          }
+
         });
       </script>
 </body>
