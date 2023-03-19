@@ -375,7 +375,8 @@
                 <p style="font-size: 13px">Abraji - Associação Brasileira de Jornalismo Investigativo</P>
                 <p style="font-size: 13px">Certificado emitido em 2019</P>
                 <a href="https://drive.google.com/file/d/1SwG4qLhevmlaOOfFvnxNEHQ_vJkVItjG/view"
-                  class="btn btn-light btn-lg active" role="button" aria-pressed="true" target="_blank">Exibir credencial</a>
+                  class="btn btn-light btn-lg active" role="button" aria-pressed="true" target="_blank">Exibir
+                  credencial</a>
               </div>
             </div>
 
@@ -384,13 +385,14 @@
             <div class="hstack gap-3"> <!-- BOX 3 -->
               <div class="bg-transparent"><img
                   src="https://media.licdn.com/dms/image/C560BAQFOaPf9kBkweA/company-logo_200_200/0/1519862418455?e=1684972800&v=beta&t=FvTOc-H5ju5GcV-blRLPTg5BCDPNpPfEDhFrw7KN5aU"
-                  alt="Logo da Abraji"></div>
+                  id="imagem-responsiva" alt="Logo da Abraji"></div>
               <div class="bg-transparent">
                 <p style="font-size: 15px"><b>Curso Comprova de Verificação</b></p>
                 <p style="font-size: 13px">Abraji - Associação Brasileira de Jornalismo Investigativo</P>
                 <p style="font-size: 13px">Certificado emitido em 2020</P>
                 <a href="https://drive.google.com/file/d/1V8NHtPoTCyyr9yL0_fES9DJOOgP3tPNh/view"
-                  class="btn btn-light btn-lg active" role="button" aria-pressed="true" target="_blank"1111111111111111111>Exibir credencial</a>
+                  class="btn btn-light btn-lg active" role="button" aria-pressed="true" target="_blank"
+                  1111111111111111111>Exibir credencial</a>
               </div>
             </div>
 
@@ -440,6 +442,16 @@
             captions[i].style.color = body.style.backgroundColor === "white" ? "#4f4f4f" : "white";
           }
 
+        });
+      </script>
+
+      <script>
+        $(window).resize(function () {
+          if (window.innerWidth < 768) {
+            $("#imagem-responsiva").hide();
+          } else {
+            $("#imagem-responsiva").show();
+          }
         });
       </script>
 </body>
