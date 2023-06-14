@@ -139,11 +139,9 @@ a:active {
     transform: translateY(-50%);
 }
 
-.vstack {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bg-transparent {
-    margin-bottom: 0;
-  }
+.baixar-btn {
+    position: fixed;
+    left: 18px;
+    top: 91%;
+    transform: translateY(-50%);
+}
