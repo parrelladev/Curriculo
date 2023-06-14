@@ -3,31 +3,51 @@
 
 /* CSS RESET */
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
 }
+
 body {
     background-color: #fff;
     display: flex;
     justify-content: center;
+    color: #4f4f4f; /* Cor padrão das fontes */
 }
-.col-lg-4 bg-transparent{
+
+body.night-mode,
+body.night-mode .texto,
+body.night-mode .legenda,
+body.night-mode .nav-link {
+    color: #EEEEEE; /* Cor dos texos no modo noturno */
+}
+
+body.night-mode {
+    background-color: #313338; /* Cor do fundo no modo noturno */
+}
+
+.col-lg-4 bg-transparent {
     height: 100%;
     width: 100%;
 }
 
-.img__solveris{
+.hstack {
+    margin-bottom: auto;
+}
+
+.img__solveris {
     width: 100%;
 }
-.imagem-responsiva{
+
+.imagem-responsiva {
     margin-bottom: 15px;
-    float: left; 
-    margin-right: 15px; 
-    margin-bottom: 60px
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 60px;
 }
+
 .bg-transparent > p:first-child {
     font-size: 15px;
 }
@@ -35,16 +55,17 @@ body {
 .bg-transparent > p:nth-child(2) {
     font-size: 13px;
 }
+
 .bg-transparent > p:nth-child(3) {
     font-size: 13px;
 }
 
 .nome {
     color: #5b86ae;
-
 }
-.contato{
-    color: #5B86AE !important;
+
+.contato {
+    color: #5b86ae;
 }
 
 a:hover {
@@ -59,18 +80,11 @@ a:active {
     text-decoration: none;
 }
 
-.white {
+.texto {
     line-height: 1.6;
-    color: #4f4f4f;
     border-color: fff;
     position: relative;
-}
-
-.black {
-    line-height: 1.6;
-    color: fff;
-    border-color: #2a2f33;
-    position: relative;
+    color: #4f4f4f; /* Cor padrão do texto */
 }
 
 .legenda {
@@ -83,8 +97,9 @@ a:active {
 }
 
 .svg-linha {
-    margin-bottom: -60px
+    margin-bottom: -60px;
 }
+
 .avatar {
     position: absolute;
     top: 53px;
@@ -124,3 +139,11 @@ a:active {
     transform: translateY(-50%);
 }
 
+.vstack {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bg-transparent {
+    margin-bottom: 0;
+  }

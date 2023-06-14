@@ -1,29 +1,30 @@
 // <!-- Adicionando funcionalidade do modo noturno -->
-const nightModeBtn = document.querySelector("#night-mode-btn");
-nightModeBtn.addEventListener("click", function () {
-    const body = document.querySelector("body");
-    body.style.backgroundColor = body.style.backgroundColor === "white" ? "#2a2f33" : "white";
-
-const elements = document.querySelectorAll(".white, .black");
-    for (let i = 0; i < elements.length; i++) {
-    var containsWhite = elements[i].classList.contains('white')
-
-    if (containsWhite) {
-        elements[i].classList.add('black');
-        elements[i].classList.remove('white');
+function enableNightMode() {
+    document.body.classList.add('night-mode');
+    localStorage.setItem('nightMode', 'true');
+  }
+  
+  function disableNightMode() {
+    document.body.classList.remove('night-mode');
+    localStorage.setItem('nightMode', 'false');
+  }
+  
+  // Verifica se o modo noturno está ativado ao carregar a página
+  if (localStorage.getItem('nightMode') === 'true') {
+    enableNightMode();
+  }
+  
+  // Alterna entre o modo noturno e o modo padrão ao clicar no botão
+  const nightModeBtn = document.getElementById('night-mode-btn');
+  nightModeBtn.addEventListener('click', () => {
+    const nightModeEnabled = localStorage.getItem('nightMode') === 'true';
+    if (nightModeEnabled) {
+      disableNightMode();
+    } else {
+      enableNightMode();
     }
-    else {
-        elements[i].classList.add('white');
-        elements[i].classList.remove('black');
-    }
-}
-
-const captions = document.querySelectorAll(".bg-transparent, .legenda");
-for (let i = 0; i < captions.length; i++) {
-    captions[i].style.color = body.style.backgroundColor === "white" ? "#4f4f4f" : "white";
-}
-
-});
+  });
+  
 
 // <!-- Adicionando funcionalidade de ocultar fotos -->
 
