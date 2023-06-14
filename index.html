@@ -7,114 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
   <!-- FAVICON -->
   <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico">
-
-  <style>
-    body {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-    }
-
-    h2 {
-      color: #5b86ae;
-
-    }
-
-    h5 {
-      color: #5B86AE !important;
-    }
-
-    a:hover {
-      color: #ec8e58;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    a:active {
-      color: #ec8e58;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .white {
-      line-height: 1.6;
-      color: #4f4f4f;
-      border-color: white;
-      position: relative;
-    }
-
-    .black {
-      line-height: 1.6;
-      color: white;
-      border-color: #2a2f33;
-      position: relative;
-    }
-
-    .legenda {
-      margin-top: 5px;
-      line-height: 1.6;
-      font-size: 14px;
-      color: #4f4f4f;
-      position: relative;
-      text-align: left;
-    }
-
-    .svg-linha {
-      margin-bottom: -60px
-    }
-
-    .avatar {
-      position: absolute;
-      top: 53px;
-      left: 695px;
-      z-index: 1;
-    }
-
-    .slow-fade {
-      transition-duration: 20s;
-    }
-
-    .larger-nav {
-      width: 100%;
-    }
-
-    .myclass {
-      width: 200px;
-      height: 200px;
-      margin-right: 10px;
-      margin-bottom: 65px;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .boxinvisivel {
-      width: 70px;
-    }
-
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
-    #night-mode-btn {
-      position: fixed;
-      left: 18px;
-      top: 96%;
-      transform: translateY(-50%);
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body style="background-color: white;">
+<body>
   <div class="container my-4">
     <div class="row justify-content-center">
       <div class="col-lg-5 text-end gy-2">
-
         <svg>
           <defs>
             <clipPath id="avatar-clip">
@@ -126,11 +29,11 @@
           <circle cx="275" cy="120" r="20" fill="#ec8e58" />
         </svg>
 
-        <h2><b>Ângelo Parrella</b></h2>
+        <h2 class="nome"><b>Ângelo Parrella</b></h2>
         <p class="white">Sou jornalista e redator com foco em produção e distribuição de conteúdo digital com
           experiência em análise de resultados e desenvolvimento de projetos em comunicação. Tenho prática em produzir
           reportagens em hipertexto, audiovisual e podcast.</p>
-        <h5><b>Contato</b></h5>
+        <h5 class="contato"><b>Contato</b></h5>
         <p class="white">
           <a class="white" href="mailto:angelo.parrella@live.com" target="_blank">angelo.parrella@live.com</a>
           <br>
@@ -181,7 +84,7 @@
           <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
             <div class="row">
 
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
+              <div class="col-lg-4 bg-transparent">
                 <a href="https://www.folhavitoria.com.br/geral/noticia/01/2018/liberdade--luta-e-vitorias-sao-comemoradas-no-dia-nacional-da-visibilidade-trans"
                   target="_blank">
                   <img src="./assets/Reportagem_Visibilidade_trans.png" width="100%">
@@ -190,7 +93,7 @@
                 </a>
               </div>
 
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
+              <div class="col-lg-4 bg-transparent">
                 <a href="https://www.mpc.es.gov.br/2018/05/representacao-do-mpc-e-acatada-e-agentes-publicos-de-governador-lindenberg-sao-condenados-a-devolver-r-307-mil/"
                   target="_blank">
                   <img src="./assets/TCE_ES.png" width="100%">
@@ -198,61 +101,15 @@
                 </a>
               </div>
 
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
+              <div class="col-lg-4 bg-transparent">
                 <a href="https://www.folhavitoria.com.br/entretenimento/noticia/12/2017/com-estilo-diferente--grupo-capixaba-solveris-ganha-espaco-na-cena-do-rap-nacional"
                   target="_blank">
-                  <img src="./assets/Reportagem_Solveris.png" width="100%">
+                  <img class="img__solveris" src="./assets/Reportagem_Solveris.png">
                   <p class="legenda">Entrevista com grupo capixaba Solveris</p>
                 </a>
               </div>
 
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
-                <a href="#" target="_blank">
-                  <div class="placeholder-glow"><span class="placeholder" style="height: 200px; width: 100%;"></span>
-                  </div>
-                  <p class="legenda">Carregando...</p>
-                </a>
-              </div>
 
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
-                <a href="#" target="_blank">
-                  <div class="placeholder-glow"><span class="placeholder" style="height: 200px; width: 100%;"></span>
-                  </div>
-                  <p class="legenda">Carregando...</p>
-                </a>
-              </div>
-
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
-                <a href="#" target="_blank">
-                  <div class="placeholder-glow"><span class="placeholder" style="height: 200px; width: 100%;"></span>
-                  </div>
-                  <p class="legenda">Carregando...</p>
-                </a>
-              </div>
-
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
-                <a href="#" target="_blank">
-                  <div class="placeholder-glow"><span class="placeholder" style="height: 200px; width: 100%;"></span>
-                  </div>
-                  <p class="legenda">Carregando...</p>
-                </a>
-              </div>
-
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
-                <a href="#" target="_blank">
-                  <div class="placeholder-glow"><span class="placeholder" style="height: 200px; width: 100%;"></span>
-                  </div>
-                  <p class="legenda">Carregando...</p>
-                </a>
-              </div>
-
-              <div class="col-lg-4 bg-transparent" style="height: 100%" width="100%">
-                <a href="#" target="_blank">
-                  <div class="placeholder-glow"><span class="placeholder" style="height: 200px; width: 100%;"></span>
-                  </div>
-                  <p class="legenda">Carregando...</p>
-                </a>
-              </div>
             </div>
           </div>
 
@@ -262,17 +119,17 @@
             <div class="hstack gap-3"> <!-- BOX 1 -->
               <div class="bg-transparent">
                 <img
-                  src="https://media.licdn.com/dms/image/C4E0BAQFxS3NWj1rBeQ/company-logo_200_200/0/1621211447864?e=1684972800&v=beta&t=Ejxk54eFTYDNdNvQYeHLDrZb7ucKxNmbB7gl6rPdJG0"
-                  class="imagem-responsiva" alt="Logo da Resultate" style="margin-bottom: 15px;">
+                  src="assets/1621211447864.jpeg"
+                  class="imagem-responsiva" alt="Logo da Resultate">
               </div>
 
               <div class="bg-transparent">
-                <p style="font-size: 15px"><b>Assessor de Imprensa / Agência Resultate</b></p>
-                <p style="font-size: 13px">Planejamento, apuração e produção de pautas e atendimento às demandas de
+                <p><b>Assessor de Imprensa / Agência Resultate</b></p>
+                <p>Planejamento, apuração e produção de pautas e atendimento às demandas de
                   imprensa. Acompanhamento em entrevistas e suporte de media training para os clientes, além de produção
                   mensal de relatório de resultados. Outras atividades: Redator publicitário; Apoio ao setor de social
                   media.</p>
-                <p style="font-size: 13px"><b>Clientes:</b> FortLev; Farmácia Mônica; Construtora iUrban, Construtora
+                <p><b>Clientes:</b> FortLev; Farmácia Mônica; Construtora iUrban, Construtora
                   Macafé; Cooltiva Fazenda Urbana; Obrazul; Cpaps; Politintas; MedSênior.</p>
               </div>
             </div>
@@ -281,18 +138,17 @@
 
             <div class="hstack gap-3"> <!-- BOX 2 -->
               <div class="bg-transparent">
-                <img src="./assets/logo_RF.png" class="imagem-responsiva" alt="Logo da RF"
-                  style="float: left; margin-right: 15px; margin-bottom: 60px;">
+                <img src="./assets/logo_RF.png" class="imagem-responsiva" alt="Logo da RF">
               </div>
               <div class="bg-transparent">
-                <p style="font-size: 15px"><b>Analista de mídias sociais / RF Comunicação</b></p>
-                <p style="font-size: 13px">Gestão e produção de conteúdo textual e visual para diversos perfis médios no
+                <p><b>Analista de mídias sociais / RF Comunicação</b></p>
+                <p>Gestão e produção de conteúdo textual e visual para diversos perfis médios no
                   Instagram e no Facebook.</p>
-                <p style="font-size: 13px">Elaboração de ações de comunicação, em destaque a criação do conceito e arte
+                <p >Elaboração de ações de comunicação, em destaque a criação do conceito e arte
                   do selo Academia Segura. Este projeto foi produzido para a Associação das Academias de Ginástica do
                   Espírito Santo e foi aprovado pelo governo do Estado como forma de assegurar o comprometimento das
                   academias com os protocolos de biossegurança durante a pandemia.</p>
-                <p style="font-size: 13px"><b>Competências:</b> Gestão de redes sociais · Planejamentos de comunicação ·
+                <p><b>Competências:</b> Gestão de redes sociais · Planejamentos de comunicação ·
                   Redator · Mídias sociais · Design</p>
               </div>
             </div>
@@ -301,13 +157,12 @@
 
             <div class="hstack gap-3"> <!-- BOX 3 -->
               <div class="bg-transparent">
-                <img src="./assets/logo_mpc.jpg" class="imagem-responsiva" alt="Logo do MPC"
-                  style="float: left; margin-right: 15px;">
+                <img src="./assets/logo_mpc.jpg" class="imagem-responsiva" alt="Logo do MPC">
               </div>
 
               <div class="bg-transparent">
-                <p style="font-size: 15px"><b>Assessor de imprensa / Ministério Público de Contas</b></p>
-                <p style="font-size: 13px">Desempenhei as funções de escrever releases para imprensa e notícias para o
+                <p><b>Assessor de imprensa / Ministério Público de Contas</b></p>
+                <p>Desempenhei as funções de escrever releases para imprensa e notícias para o
                   site institucional, arquivamento de clipping de notícias, organização de eventos e processos
                   seletivos, desenvolvimento de designers institucionais, gerenciamento de redes sociais e análise de
                   público-alvo. Auxilio o desenvolvimento de estratégias de comunicação nessas mídias.</p>
@@ -319,19 +174,18 @@
             <div class="hstack gap-3"> <!-- BOX 4 -->
               <div class="bg-transparent">
                 <img
-                  src="https://media.licdn.com/dms/image/C4D0BAQE5D9n6pdHNYQ/company-logo_200_200/0/1649339308014?e=1684972800&v=beta&t=CN_QYB9JX4F3_EGsDLYUJ5HrndjM8ZtApIdrjTn53uk"
-                  class="imagem-responsiva" alt="Logo da Resultate"
-                  style="float: left; margin-right: 15px; margin-bottom: 2px;">
+                  src="assets/Logo-FOLHA.png"
+                  class="imagem-responsiva" alt="Logo da Resultate">
               </div>
 
               <div class="bg-transparent">
-                <p style="font-size: 15px"><b>Jornalista / Jornal Online Folha Vitória</b></p>
-                <p style="font-size: 13px">Atuei produzindo notícias do cotidiano e
+                <p><b>Jornalista / Jornal Online Folha Vitória</b></p>
+                <p>Atuei produzindo notícias do cotidiano e
                   reportagens especiais. Também foi de minha responsabilidade o desenvolvimento de conteúdos para as
                   redes sociais do portal.No jornal online Folha Vitória, atuei produzindo notícias do cotidiano e
                   reportagens especiais. Também foi de minha responsabilidade o desenvolvimento de conteúdos para as
                   redes sociais do portal.</p>
-                <p style="font-size: 13px"><b>Competências:</b> Redação de notícias · Reportagem · Mídias sociais ·
+                <p><b>Competências:</b> Redação de notícias · Reportagem · Mídias sociais ·
                   Portais · Jornalismo</p>
               </div>
             </div>
@@ -342,12 +196,12 @@
 
             <div class="hstack gap-3"> <!-- BOX 1 -->
               <div class="bg-transparent"><img
-                  src="https://media.licdn.com/dms/image/C4E0BAQHtX5cGXPATkg/company-logo_200_200/0/1587155871304?e=1684972800&v=beta&t=pPECR-4Zd0Jr2lVqzqKukQzaz3bGr8Xppn4iSD9B_QU"
+                  src="assets/Ufes.png"
                   class="imagem-responsiva" alt="Logo da Ufes"></div>
               <div class="bg-transparent">
-                <p style="font-size: 15px"><b>Comunicação Social com habilitação em jornalismo</b></p>
-                <p style="font-size: 13px">Universidade Federal do Espírito Santo</P>
-                <p style="font-size: 13px">2015 - 2020</P>
+                <p><b>Comunicação Social com habilitação em jornalismo</b></p>
+                <p>Universidade Federal do Espírito Santo</P>
+                <p>2015 - 2020</P>
                 <a href="#" class="btn btn-secondary" role="button" aria-pressed="true" target="_blank">Exibir
                   diploma</a>
               </div>
@@ -357,12 +211,12 @@
 
             <div class="hstack gap-3"> <!-- BOX 2 -->
               <div class="bg-transparent"><img
-                  src="https://media.licdn.com/dms/image/C560BAQFOaPf9kBkweA/company-logo_200_200/0/1519862418455?e=1684972800&v=beta&t=FvTOc-H5ju5GcV-blRLPTg5BCDPNpPfEDhFrw7KN5aU"
+                  src="assets/Abraji.jpg"
                   class="imagem-responsiva" alt="Logo da Abraji"></div>
               <div class="bg-transparent">
-                <p style="font-size: 15px"><b>Jomalismo Local Sustentável</b></p>
-                <p style="font-size: 13px">Abraji - Associação Brasileira de Jornalismo Investigativo</P>
-                <p style="font-size: 13px">Certificado emitido em 2019</P>
+                <p><b>Jomalismo Local Sustentável</b></p>
+                <p>Abraji - Associação Brasileira de Jornalismo Investigativo</P>
+                <p>Certificado emitido em 2019</p>
                 <a href="https://drive.google.com/file/d/1SwG4qLhevmlaOOfFvnxNEHQ_vJkVItjG/view"
                   class="btn btn-secondary" role="button" aria-pressed="true" target="_blank">Exibir
                   certificado</a>
@@ -373,12 +227,12 @@
 
             <div class="hstack gap-3"> <!-- BOX 3 -->
               <div class="bg-transparent"><img
-                  src="https://media.licdn.com/dms/image/C560BAQFOaPf9kBkweA/company-logo_200_200/0/1519862418455?e=1684972800&v=beta&t=FvTOc-H5ju5GcV-blRLPTg5BCDPNpPfEDhFrw7KN5aU"
+                  src="assets/Abraji.jpg"
                   class="imagem-responsiva" alt="Logo da Abraji"></div>
               <div class="bg-transparent">
-                <p style="font-size: 15px"><b>Curso Comprova de Verificação</b></p>
-                <p style="font-size: 13px">Abraji - Associação Brasileira de Jornalismo Investigativo</P>
-                <p style="font-size: 13px">Certificado emitido em 2020</P>
+                <p><b>Curso Comprova de Verificação</b></p>
+                <p>Abraji - Associação Brasileira de Jornalismo Investigativo</P>
+                <p>Certificado emitido em 2020</p>
                 <a href="https://drive.google.com/file/d/1V8NHtPoTCyyr9yL0_fES9DJOOgP3tPNh/view"
                   class="btn btn-secondary " role="button" aria-pressed="true" target="_blank"
                   1111111111111111111>Exibir certificado</a>
@@ -401,46 +255,8 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-      <!-- Adicionando funcionalidade do modo noturno -->
-      <script>
-        const nightModeBtn = document.querySelector("#night-mode-btn");
-        nightModeBtn.addEventListener("click", function () {
-          const body = document.querySelector("body");
-          body.style.backgroundColor = body.style.backgroundColor === "white" ? "#2a2f33" : "white";
-
-          const elements = document.querySelectorAll(".white, .black");
-          for (let i = 0; i < elements.length; i++) {
-            var containsWhite = elements[i].classList.contains('white')
-
-            if (containsWhite) {
-              elements[i].classList.add('black');
-              elements[i].classList.remove('white');
-            }
-            else {
-              elements[i].classList.add('white');
-              elements[i].classList.remove('black');
-            }
-          }
-
-          const captions = document.querySelectorAll(".bg-transparent, .legenda");
-          for (let i = 0; i < captions.length; i++) {
-            captions[i].style.color = body.style.backgroundColor === "white" ? "#4f4f4f" : "white";
-          }
-
-        });
-      </script>
-
-      <!-- Adicionando funcionalidade de ocultar fotos -->
-      <script>
-        $(window).resize(function () {
-          if (window.innerWidth < 768) {
-            $(".imagem-responsiva").hide();
-          } else {
-            $(".imagem-responsiva").show();
-          }
-        });
-      </script>
+      <!-- Adicionando o Script da pagina -->
+      <script src="script.js"></script>
 </body>
 
 </html>
