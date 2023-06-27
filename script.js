@@ -26,23 +26,6 @@ function enableNightMode() {
   });
   
 
-// <!-- Adicionando funcionalidade do baixar currículo -->
-function baixarArquivo() {
-    var link = 'https://drive.google.com/file/d/1fJC9-v0DLuKVOTOiZTXRTI1Lrb9y8KNZ/view?usp=sharing'; // Insira o link do arquivo que deseja baixar aqui
-    var nomeArquivo = 'curriculo_angelo_parrella.pdf'; // Insira o nome que deseja dar ao arquivo aqui
-  
-    var elementoLink = document.createElement('a');
-    elementoLink.href = link;
-    elementoLink.download = nomeArquivo;
-  
-    elementoLink.style.display = 'none';
-    document.body.appendChild(elementoLink);
-  
-    elementoLink.click();
-  
-    document.body.removeChild(elementoLink);
-  }
-
 // <!-- Adicionando funcionalidade de ocultar fotos -->
 
 $(window).resize(function () {

@@ -138,10 +138,3 @@ a:active {
     top: 96%;
     transform: translateY(-50%);
 }
-
-.baixar-btn {
-    position: fixed;
-    left: 18px;
-    top: 73em;
-    transform: translateY(-50%);
-}
